@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammed Shariq — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Personal portfolio of Mohammed Shariq — beginner web developer from Kemri." />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="logo">
+        <svg viewBox="0 0 100 100" class="logo-svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="50%" y="56%" text-anchor="middle" font-size="34" fill="currentColor" font-family="Courier New, monospace">MS</text>
+        </svg>
+        <div class="brand">
+          <strong>Mohammed</strong><span>Shariq</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-left">
+          <h1 class="typewriter">Hi — I'm <span class="accent">Mohammed</span>.</h1>
+          <p class="lead">Beginner web developer from <strong>Kemri</strong>. I build small, thoughtful projects to learn and grow.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="mailto:yourname@example.com?subject=Hello%20Mohammed">Email Me</a>
+          </div>
+          <div class="meta">
+            <div>Local time (Kolkata): <strong id="kolkataTime">--:--</strong></div>
+            <div id="status" class="status">Status: <span>Learning</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <!-- Animated tile grid that reacts to mouse -->
+          <div id="grid" class="grid"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Color Mixer</h3>
+            <p>Small UI to mix RGB values and get CSS-ready colors — a practice project for DOM & events.</p>
+            <div class="card-actions">
+              <button class="btn small" data-demo="color">Open Demo</button>
+              <a class="link" href="#" aria-label="Project source">Source</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Notes Mini-app</h3>
+            <p>LocalStorage based notes app — create, edit, remove notes. Perfect for practicing state persistence.</p>
+            <div class="card-actions">
+              <button class="btn small" data-demo="notes">Open Demo</button>
+              <a class="link" href="#" aria-label="Project source">Source</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Responsive Landing</h3>
+            <p>Landing page template with responsive grid & accessible layout — use it as starter for new projects.</p>
+            <div class="card-actions">
+              <button class="btn small" data-demo="landing">Open Demo</button>
+              <a class="link" href="#" aria-label="Project source">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am learning front-end development (HTML, CSS, basic JavaScript). I enjoy building simple projects, playing cricket, and spending time with family.</p>
+        <ul class="skills">
+          <li>HTML & semantic markup</li>
+          <li>CSS — Flexbox, responsive layout</li>
+          <li>JavaScript — DOM, events</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" class="contact-form" action="#" novalidate>
+          <label>
+            Your email
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required placeholder="Hello Mohammed..."></textarea>
+          </label>
+          <div class="form-row">
+            <button type="submit" class="btn">Send</button>
+            <button type="button" id="downloadResume" class="btn ghost">Download Resume</button>
+          </div>
+          <p class="footnote">This form uses a client-side demo handler — update the form action to connect with a backend or email service.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> Mohammed Shariq — Built for learning & demo.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
